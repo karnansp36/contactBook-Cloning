@@ -1,0 +1,1170 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+#navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: white;
+    padding-top: 10px;
+    
+}
+.navContainer{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.firstHalf{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 30px;
+    
+}
+.secondHalf{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:35%;
+}
+.secondHalf div{
+    font-size: 13pt;
+}
+.menuContainer{
+    display: none;
+}
+
+.btnContainer button{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border:none;
+    color:white;
+    font-size: 12pt;
+    background-color:rgb(0, 162, 255);
+}
+.secondContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-right: 30px;
+}
+.toggleMenuContainer{
+    position: absolute;
+    top:80px;
+    left:0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(19, 20, 47);
+    color:white;
+    font-size: 14pt;
+}
+.toggleContainer{
+    display: none;
+}
+#toggleMenu{
+    visibility: hidden;
+   
+    top:-150px
+}
+
+
+/*   Header  */
+#header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 120px;
+}
+.headerContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.firstHalfHeader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.firstHalfHeader h1{
+    font-size: 42pt;
+    padding-bottom: 30px;
+}
+.headerParagraph{
+    font-size: 18pt;
+    color: gray;
+}
+.btnStart{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border:none;
+    color:white;
+    font-size: 12pt;
+    background-color:#00a2ff;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    
+}
+
+
+.headerCount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+.million{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 10px;
+    
+
+}
+.million h1{
+    color: #00a2ff;
+    font-size: 32pt;
+    height: 50px;
+   
+   
+}
+.million p{
+    font-size: 16pt;
+    color: gray;
+    width: 50%;
+    height: 40px;
+    
+}
+.line1{
+    width:2px;
+    height: 90%;
+    background-color: rgb(227, 227, 227);
+    border:none;
+}
+.headerImgContainer{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerImgContainer img{
+    width: 90%;
+}
+
+
+
+#trustedBar{
+    background-color: rgb(223, 243, 254);
+    width: 100%;
+    height: 100vh;
+}
+
+
+/*    trusted by     */
+#trustedBar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.trustExternal{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tBy{
+    font-size: 30pt;
+    padding-bottom: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+.trustContainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.image img{
+    width: 150px;
+    height: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* cards for how it works */
+#cardWorks{
+    width:100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.cardTitle{
+    text-align: center;
+    font-size: 18pt;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.cardContactContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+.cardsBasis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 300px;
+}
+
+.cards{
+    width: 100%;
+    border:1px solid rgb(215, 215, 215);
+    height:350px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 20px;
+
+}
+.cards h2{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(10, 10, 18);
+    color:white;
+    font-size: 16pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cards p{
+    font-size: 14pt;
+    width: 100%;
+    padding:20px 20px;
+    text-align: center;
+    
+    
+}
+.cards img{
+    width: 90%;
+    height: 50%;
+    padding-bottom: 20px;
+    
+}
+
+/*     content Section    */
+#contentSection{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:60px 0;
+}
+.c1Container, .c2Container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+
+}
+
+.paraContainer{
+    width: 100%;
+    padding: 20px 40px;
+
+}
+.paraContainer h1{
+    font-size: 24pt;
+    padding: 20px 0;
+}
+.paraContainer p{
+    font-size: 16pt;
+    color:rgb(113, 113, 113);
+}
+.imgContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgContainer img{
+    width: 90%;
+}
+
+
+/*  platform container */
+#platformContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #eff8fd;
+}
+.platformContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.platformContainer h1{
+    font-size: 40pt;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.platformContainer p{
+    font-size: 16pt;
+    padding-top: 10px;
+    color:gray;
+    text-align: center;
+    width: 40%;
+   
+}
+.platformCardContainer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    
+}
+.platformCard{
+    flex: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:1px solid rgb(230, 230, 230);
+    background-color: white;
+    border-radius: 20px;
+    padding:20px ;
+    margin: 10px;
+   
+}
+.platformCard img{
+    width: 60%;
+    padding-bottom: 20px;
+}
+#businessCards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.businessCardsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+.businessCardsContainer h1{
+    font-size: 40pt;
+    font-weight: 600;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.businessCardsContainer p{
+    font-size: 16pt;
+    text-align: center;
+    color: gray;
+    width: 70%;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+.businessCardsContainer img{
+    width: 70%;
+}
+
+
+/*   secure design       */
+#secure{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f9fd;
+}
+.secureContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+
+}
+.secureTitle{
+    font-size: 40pt;
+}
+.secureCardsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    padding: 20px;   
+}
+.secureCards{
+    flex: 250px;
+    height: 300px;
+    background-color: white; 
+    border:1px solid rgb(197, 197, 197);
+    border-radius: 20px;
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.secureCards img{
+    width: 30%;
+    padding: 20px 0;
+}
+.secureCards h2{
+    font-size: 19pt;
+}
+.secureCards p{
+    text-align: center;
+    font-size: 13pt;
+    color:gray;
+    padding: 20px;
+    line-height: 1.4rem;
+    letter-spacing: 1px;
+}
+
+/*  customers reviews  */
+#customers{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.customersContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+
+}
+.customerTitle{
+    font-size: 40pt;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.customerParaContainer{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.customerPara{
+    flex:300px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #e8f6ff;
+    margin:10px;
+    border-radius: 10px;
+    line-height: 2rem;
+    height: auto;
+    
+}
+.customerPara p{
+    font-size: 14pt;
+    color:gray;
+
+}
+.customerName{
+    display: flex;
+}
+.cName{
+    padding-left: 20px;
+}
+.cName p{
+    font-size: 12pt;
+}
+
+
+/*    contact book  */
+#cBook{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8f6ff;
+}
+.c3Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.cBookTitle{
+    font-size: 40pt;
+    padding-top:30px
+}
+.cBookContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+    width: 100%;
+    padding: 30px 20px;
+}
+.cBookCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 90%;
+    border:1px solid rgb(238, 238, 238);
+    background-color: white;
+    border-radius: 10px;
+    margin:20px;
+}
+.cBookCard img{
+    padding:20px 0;
+}
+.cBookCard h2{
+    font-size: 20pt;
+    text-align: center;
+    padding:0 10px ;
+}
+.cBookCard p{
+    font-size: 14pt;
+    color:gray;
+    padding: 20px 10px;
+    text-align: center;
+}
+#growing{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.growingContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.growingContainer  h1{
+    font-size: 40pt;
+    padding: 20px 0;
+}
+.yesOrNo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 10px;
+}
+.noContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border:1px solid rgb(194, 194, 194);
+    margin:20px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+.noContainer h2{
+    font-size: 20pt;
+    padding:30px;
+}
+.no{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-right:15px ;
+
+}
+.no img{
+    padding-right: 20px;
+}
+.no p{
+    font-size: 16pt;
+    color: rgb(47, 46, 46);
+   
+}
+.yesContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    background-color: #eef8fe;
+    margin: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+.yesContainer h2{
+    font-size: 20pt;
+    padding:30px;
+}
+.yes{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-right:15px ;
+
+}
+.yes img{
+    padding-right: 20px;
+}
+.yes p{
+    font-size: 16pt;
+    color: rgb(47, 46, 46);
+   
+}
+.growingContainer button{
+    margin-bottom: 50px;
+}
+
+
+/*       App store     */
+#app{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.appContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.appContainer img{
+    width: 40%;
+    padding: 30px 30px;
+}
+.appContent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.appContent h1{
+    font-size: 40pt;
+    padding-bottom: 20px;
+    
+}
+.appContent p{
+    font-size: 18pt;
+    color:rgb(70, 70, 70);
+    
+}
+.storeContainer{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+
+/* organize section   */
+#organize{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #010f1e;
+}
+.organizeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
+}
+.organizeContainer h1{
+    font-size: 36pt;
+    color:white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom:20px ;
+}
+.organizeContainer p{
+    font-size: 14pt;
+    color:rgb(179, 179, 179);
+    text-align: center;
+    padding: 10px;
+    
+}
+
+
+/*        footer          */
+#footerAddress{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addressContainer{
+    width: 100%;
+    height: auto;
+}
+.gridContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 40px;
+}
+.contactAddress{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 30%;
+}
+.contactAddress img{
+    padding-bottom:30px;
+}
+.contactAddress p{
+    line-height: 2em;
+    padding-bottom: 30px;
+}
+.socialIcons img{
+    padding-right: 10px;
+}
+.caseContaier{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 70%;
+}
+.useCase{
+    line-height: 2em;
+}
+.useCase h3{
+    padding-bottom: 20px;
+}
+.useCase div{
+    color:gray;
+}
+
+.products{
+    line-height: 2em;
+}
+.products h3{
+    padding-bottom: 20px;
+}
+.products div{
+    color:gray;
+}
+.switchFrom{
+    line-height: 2em;
+}
+.switchFrom h3{
+    padding-bottom: 20px;
+}
+.switchFrom div{
+    color:gray;
+}
+
+.navigate{
+    line-height: 2em;
+    padding-top: 30px;
+}
+.navigate h3{
+    padding-bottom: 20px;
+}
+.navigate div{
+    color:gray;
+}
+
+/*      footer container */
+#foot{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(244, 244, 244);
+  
+}
+.fContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+}
+.fText1{
+    display: flex;
+    align-items: center;
+}
+.fText1 p{
+    padding-right: 20px;
+}
+.fText2{
+    display: flex;
+    padding-right: 30px;
+    align-items: center;
+}
+.fText2 img{
+    padding-left: 20px;
+}
+
+#externalContainer{
+    display: block;
+}
+
+/*    Contact book    */
+
+#contacts{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(234, 255, 255);
+}
+
+.personOne{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 60px;
+}
+.personOne img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.profile{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#createBtn{
+    position: fixed;
+    top:2%;
+    right:20%;
+}
+.inputProfile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(247, 207, 207);
+}
+.inputProfileContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+@media only screen and (max-width:960px){
+    .secondContainer{
+        display: none;
+    }
+    .menuContainer{
+        display: flex;
+        height: 60px;
+        width: 60px;
+        justify-content: center;
+        align-items: center;
+        
+       
+    }
+    .secondHalf{
+        
+        justify-content: flex-end;
+        padding-right: 30px;
+    }
+    .firstHalf{
+        padding-left: 30px;
+    }
+    .toggleContainer{
+        display: none;
+    }
+    #toggleMenu{
+        visibility: visible;
+    }
+    .headerContainer{
+        flex-direction: column;
+    }
+    .firstHalfHeader h1{
+        font-size: 30pt;
+    }
+    .headerParagraph{
+        font-size: 14pt;
+    }
+    .headerCount{
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .line1{
+        width:2px;
+        height: 90px;
+        background-color: rgb(227, 227, 227);
+        border:none;
+    }
+    .million h1{
+        font-size: 26pt;
+    }
+    .million p{
+        font-size: 14pt;
+       
+    }
+    .million{
+        padding-left: 10px;
+    }
+    .trustContainer{
+        grid-template-columns: auto auto;
+    }
+    .image img{
+        width: 140px;
+        height: 90px;
+       
+    }
+    .cardsBasis{
+        flex-basis: 350px;
+    }
+    .c1Container{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .c2Container{
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+    .businessCardsContainer h1{
+        font-size: 26pt;
+        
+    }
+    .businessCardsContainer p{
+        font-size: 14pt;
+        width: 80%;
+        
+    }
+    .businessCardsContainer img{
+        width: 80%;
+    }
+    .customerParaContainer{
+        grid-template-columns: auto;
+    }
+    .cBookContainer{
+        grid-template-columns: auto auto;
+    }
+    .cBookCard{
+        width: 95%;
+    }
+    .growingContainer{
+        margin: 10px;
+    }
+    .growingContainer h1{
+        font-size: 24pt;
+    }
+    .yesOrNo{
+        flex-direction: column;
+        width: 100%;
+    }
+    .noContainer, .yesContainer{
+        width: 100%;
+        
+    }
+    .appContainer{
+        flex-direction: column;
+        width: 100%;
+    }
+    .appContainer img{
+        width: 60%;
+    }
+    .appContent h1{
+        font-size: 24pt;
+    }
+    .appContent{
+        align-items: flex-start;
+    }
+    .appContent p{
+        font-size: 14pt;
+    }
+    .storeContainer{
+        width: 80%;
+        justify-content: flex-start;
+
+    }
+    .storeContainer img{
+        width: 60%;
+    }
+    .organizeContainer h1{
+        font-size: 24pt;
+        
+    }
+    .organizeContainer p{
+        font-size: 13pt;
+        
+    }
+    .gridContainer{
+        flex-direction: column;
+    }
+    .contactAddress{
+        width: 100%;
+    }
+    .caseContaier{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .fContainer{
+        flex-direction: column;
+    }
+    .fText1{
+        flex-direction: column;
+    }
+    
+}
+
+
+
+
+@media only screen and (min-width:1200px){
+    .navContainer{
+        width: 1200px;
+    }
+    .headerContainer{
+        width: 1200px;
+        padding-left: 30px;
+    }
+    .trustContainer{
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+    .trustExternal{
+        width: 1200px;
+    }
+    .cardContainer{
+        width: 1200px;
+    }
+    .contentContainer{
+        width: 1200px;
+    }
+    .platformContainer{
+        width: 1200px;
+    }
+    .businessCardsContainer{
+        width: 1200px;
+    }
+    .secureContainer{
+        width: 1200px;
+    }
+    .customersContainer{
+        width: 1200px;
+
+    }
+    .c3Container{
+        width: 1200px;
+    }
+    .appContainer{
+        width: 1200px;
+    }
+    .organizeContainer{
+        width: 1200px;
+    }
+    .addressContainer{
+        width: 1200px;
+    }
+    .fContainer{
+        width: 1200px;
+    }
+    .businessCardsContainer img{
+        width: 50%;
+    }
+    .cardsBasis{
+        flex-basis: 380px;
+    }
+    .paraContainer h1{
+        font-size: 32pt;
+       
+    }
+    .paraContainer p{
+        font-size: 16pt;
+        
+    }
+    
+}

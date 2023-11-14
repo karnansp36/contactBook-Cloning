@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="script.js"></script>
+    <title>Contact book</title>
+</head>
+<body>
+<div id="externalContainer">
+
+
+<section id="navbar">
+    <div class="navContainer">
+        <div class="firstHalf">
+            <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/6398101807547114e0e9c0eb_CMS%20Logo.svg" alt="">
+        </div>
+        <div class="secondHalf">
+            <div class="secondContainer">
+                <div class="pricingContainer">Pricing</div>
+                <div class="loginContainer">Login</div>
+                <div class="btnContainer"><button onclick="contactsBookOpen()">Start Free Trial</button></div>
+            </div>
+                <div class="menuContainer" onclick="toggleMenu()">
+                    <span   class="material-symbols-outlined">
+                        menu
+                    </span>
+                </div>
+        </div>
+    </div>
+    <div class="toggleContainer" id="toggleMenu">
+    <div class="toggleMenuContainer">
+        <div class="pricingContainer">Pricing</div>
+        <div class="loginContainer">Login</div>
+        <div class="btnContainer"><button id="contactBtn" onclick="contactsBookOpen()">Start Free Trial</button></div>
+    </div>
+    </div>
+</section>
+<section id="header">
+    <div class="headerContainer">
+        <div class="firstHalfHeader">
+            <h1>One place for all your contacts</h1>
+            <p class="headerParagraph">Manage contacts from a single place and access them evverywhere together with your team.</p>
+            <button class="btnStart" onclick="contactsBookOpen()">Start Free Trial</button>
+            <p class="headerSmall">No credit card required</p>
+            <div class="headerCount">
+                <div class="million">
+                    <h1>1M+</h1>
+                    <p>contacts shared</p>
+                </div>
+                <div class="line1"></div>
+                <div class="million">
+                    <h1>95%</h1>
+                    <p>user satisfaction</p>
+                </div>
+                <div class="line1"></div>
+                <div class="million">
+                    <h1>17k+</h1>
+                    <p>users</p>
+                </div>
+            </div>
+        </div>
+        <div class="headerImgContainer">
+            <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/646f249942b7f215ed7171cd_hero%20img-p-800.webp" alt="">
+        </div>
+    </div>
+</section>
+
+<section id="trustedBar">
+    <div class="trustExternal">
+        <div class="tBy">Trusted By</div>
+        <div class="trustContainer">
+            <div class="image" id="brand1"><img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/630d9a50b93ffd45f38c0ba7_cred.svg" alt=""></div>
+            <div class="image" id="brand2"><img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/630d9a612de75c9f92918694_texas.svg" alt=""></div>
+            <div class="image" id="brand3"><img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/630d9a60a7ad3f21f8c15da7_Mortgagechoice-logo-rgb-h-stacked-300ppi%201.svg" alt=""></div>
+            <div class="image" id="brand4"><img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/630d9a627d3a67040414890b_Frame%201054.svg" alt=""></div>
+            <div class="image" id="brand5"><img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/630d9a606fce3b69152a10e3_gartner.svg" alt=""></div>
+            <div class="image" id="brand6"><img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/62e3ac21698ceef811e4822f_Scalable-Capital-Logo-2-removebg-preview%201-p-500.png" alt=""></div>
+            <div class="image" id="brand7"><img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/630d9a4d134c38f1faa9bddc_Frame%201053.svg" alt=""></div>
+            <div class="image" id="brand8"><img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/630d9a4d6fce3b7a592a10a2_Frame%201051.svg" alt=""></div>
+            <div class="image" id="brand9"><img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/630d9a6092151d3a33bca6cb_Johns%20Hopkins.svg" alt=""></div>
+            <div class="image" id="brand10"><img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/630d9a4db93ffd6ca28c0b9d_advantage%20sales.svg" alt=""></div>
+            <div class="image" id="brand11"><img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/62ef6b3b0b52a662d1d9990d_Frame%201042.svg" alt=""></div>
+            <div class="image" id="brand12"><img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/630d9a6192151d1410bca6cd_freshworks.svg" alt=""></div>
+            <div class="image" id="brand13"><img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/646b582515d3ea291dc745e1_logo.webp" alt=""></div>
+            <div class="image" id="brand14"><img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/630d9a6192151d8001bca6e2_Philadelphia.svg" alt=""></div>
+            <div class="image" id="brand15"><img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/630d9a616fce3b0d872a10e4_globalpayments.svg" alt=""></div>
+        </div>
+    </div>
+</section>
+
+<section id="cardWorks">
+    <div class="cardContainer">
+        <h1 class="cardTitle">How it works</h1>
+        <div class="cardContactContainer">
+            <div class="cardsBasis">
+                <div class="cards">
+                    <h2>Import contacts</h2>
+                    <p>Import contacts from your existing setup or start from scratch</p>
+                    <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/646f30c04d486514f6df201c_Step_1-p-500.webp" alt="">
+                </div>
+            </div>
+            <div class="cardsBasis">
+                <div class="cards">
+                    <h2>Organize contacts</h2>
+                    <p>Organize your contacts in groups and share with relevent people</p>
+                    <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/646f30857f64141352aecea2_step_2.webp" alt="">
+                </div>
+            </div>
+            <div class="cardsBasis">
+                <div class="cards">
+                    <h2>Share contacts</h2>
+                    <p>Manage permissions while you keep your contacts synced & shared</p>
+                    <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/646f30869ff0d7324bc89d30_step_3.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contentSection">
+    <div class="contentContainer">
+        <div class="c1Container">
+            <div class="paraContainer">
+                <h1>All Contacts in one place</h1>
+                <p>Bring your existing contacts from different sources like Gmail or Linkedin. Centralize contacts to manage them better</p>
+            </div>
+            <div class="imgContainer">
+                <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/646f25a0b7da380c27efd8d1_All%20Contacts%20in%20one%20place-p-800.webp" alt="">
+            </div>
+        </div>
+        <div class="c2Container">
+            <div class="imgContainer">
+                <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/646f25a0e994eb87d75c3971_Coolaborate%20with%20your%20team-p-800.webp" alt="">
+            </div>
+            <div class="paraContainer">
+                <h1>Collaborate with your team</h1>
+                <p>Share contacts like you share Google Drive files. Manage contacts together so everyoune always have the updated copy of contacts.</p>
+            </div>
+            
+        </div>
+        <div class="c1Container">
+            <div class="paraContainer">
+                <h1>Categorize with custom tags</h1>
+                <p>Use custom tags like expertise or location to classify your contacts. Filter and search through your contacts in a much better way</p>
+            </div>
+            <div class="imgContainer">
+                <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/646f2498ac074f72ae0bc278_Categorize%20with%20custom%20tags.webp" alt="">
+            </div>
+        </div>
+        <div class="c2Container">
+            <div class="imgContainer">
+                <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/646f25a1e994eb87d75c39e4_Do%20more%20with%20your%20contact-p-800.webp" alt="">
+            </div>
+            <div class="paraContainer">
+                <h1>Do more with your contacts</h1>
+                <p>Add notes, attachments and reminders to your contacts. always have the right context and never forget to stay in touch.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="platformContent">
+    <div class="platformContainer">
+        <h1>Access contacts everywhere</h1>
+        <p>Use ContactBook platform across web, Android, iOS, Mac, Windows, Gmail and Chrome extension. All your contacts are always in sync across all devices.</p>
+        <div class="platformCardContainer">
+            <div class="platformCard">
+                <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/646f2746b6e753fefdc0d6a7_Laptop.svg" alt="">
+                <h2>Web</h2>
+            </div>
+            <div class="platformCard">
+                <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/64266f565a034a09e18e3584_Mobile.png" alt="">
+                <h2>Mobile Apps</h2>
+            </div>
+            <div class="platformCard">
+                <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/64266f5742b60f46ccc5e83a_extension.png" alt="">
+                <h2>Chrome Extension</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="businessCards">
+    <div class="businessCardsContainer">
+        <h1>Scan business cards</h1>
+        <p>Use ContactBook mobile app to scan business cards and store them as contacts. Instantly add any other key information, tags, notes or add them to shared groups for others to access.</p>
+        <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/646f2498b3f94659f17d1a5e_Business%20card%20scanner-p-800.webp" alt="">
+    </div>
+</section>
+
+<section id="secure">
+    <div class="secureContainer">
+        <h1 class="secureTitle">Secure by design</h1>
+        <div class="secureCardsContainer">
+            <div class="secureCards">
+                <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/646f2746b6e753fefdc0d6e8_verifiedby%20Google.svg" alt="">
+                <h3>Verified by Google</h3>
+                <p>Our Marketplace apps and plugins are compliant with security policies and are verified by Google.</p>
+            </div>
+            <div class="secureCards">
+                <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/646f274676db6a22fd3199a6_GDPR%20Aligned.svg" alt="">
+                <h2>GDPR Aligned</h2>
+                <p>We follow all the standard procedures to secure your data and comply with GDPR  regulations.</p>
+            </div>
+            <div class="secureCards">
+                <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/646f274659f2f5fb1504d36e_It%27s%20your%20data.svg" alt="">
+                <h3>It's your Data</h3>
+                <p>Your data are stored securely and are safe with us. We never sell your data.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="customers">
+    <div class="customersContainer">
+        <h1 class="customerTitle">Hear from our customers</h1>
+        <div class="customerParaContainer">
+            <div class="customerPara">
+                <p>Sharing the leads we create with our clients is core to our business. We used to export these details and give them to each client individually. We now do it effortlesslly with ContactBook.</p>
+                <div class="customerName">
+                    <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/646f382165753f487c5dbf1f_author-1.svg" alt="">
+                    <div class="cName">
+                        <h3>Eleanor Pena</h3>
+                        <p>Marketing Manager</p>
+                    </div>
+                </div>
+            </div>
+            <div class="customerPara">
+                <p>Our team literally saved hundereds of dollars by using this service instead of paying for a CRM! We were merely using CRM to manage contacts and communicate with other team members. One of our managing directors suggested that we explore ContactBook instead, and that is exactly what we ought to have done from the beginning.</p>
+                <div class="customerName">
+                    <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/646f382123b9143ac4bd255f_author-2.svg" alt="">
+                    <div class="cName">
+                        <h3>Wade Warren</h3>
+                        <p>President of Sales</p>
+                    </div>
+                </div>
+            </div>
+            <div class="customerPara">
+                <p>Our 100+ hospital staff always have access to updated contact information - exactly what we needed.</p>
+                <div class="customerName">
+                    <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/646f3820705cac1607cef277_author-4.svg" alt="">
+                    <div class="cName">
+                        <h3>Ed Hicks</h3>
+                        <p>Sr. System Admin</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="customerPara">
+                <p>I prefer being organised and ContactBook has helped manage contacts for our digital agency. Great platform!</p>
+                <div class="customerName">
+                    <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/646f38223f5c7ac524887bd5_author-5.svg" alt="">
+                    <div class="cName">
+                        <h3>Jenny Wilson</h3>
+                        <p>CTO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="customerPara">
+                <p>Great alternative to Google Contacts with features for teams which do not want to be in Google ecosystem.</p>
+                <div class="customerName">
+                    <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/646f382135393ff9e8e5b672_author-3.svg" alt="">
+                    <div class="cName">
+                        <h3>Cassy Overton</h3>
+                        <p>Nursing Assistant</p>
+                    </div>
+                </div>
+            </div>
+            <div class="customerPara">
+                <p>We moved from messy excel sheets to this amazing platform within minutes. Contacts are accessible offline as well.</p>
+                <div class="customerName">
+                    <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/646f382165753f487c5dbf1f_author-1.svg" alt="">
+                    <div class="cName">
+                        <h3>Tom Hogan</h3>
+                        <p>Realtor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="cBook">
+    <div class="c3Container">
+        <h1 class="cBookTitle">Why ContactBook?</h1>
+    <div class="cBookContainer">
+        <div class="cBookCard">
+            <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/63988e41ecdaeb81adb9e237_supervisor_account_black_24dp%203.svg" alt="">
+            <h2>Better collabration</h2>
+            <p>ContactBook keeps your contacts in sync and maintains activity logs so that your information is always up to date</p>
+        </div>
+        <div class="cBookCard">
+            <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/63988e418447c8fc30e2767e_person_pin_black_24dp%201.svg" alt="">
+            <h2>Improved data management</h2>
+            <p>You can now manage all your data in one place and take a step ahead in your management process</p>
+        </div>
+        <div class="cBookCard">
+            <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/63988e41f41e7bca6e9166b5_trending_up_black_24dp%201.svg" alt="">
+            <h2>Increased productivity</h2>
+            <p>Prioritize leads and equip your team with information they need to close more deals get more productive</p>
+        </div>
+        <div class="cBookCard">
+            <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/63988e410ccb2e69214272f7_supervised_user_circle_black_24dp%201.svg" alt="">
+            <h2>Better and long-lasting relationships</h2>
+            <p>Empower your team and engage with your network more efficiently, while monitoring increased productivity</p>
+        </div>
+        <div class="cBookCard">
+            <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/63988e41075471c441f2902a_folder_open_black_24dp%201.svg" alt="">
+            <h2>Easy access to relevant files for your contact</h2>
+            <p>Bid farewell to the hustle and bustle of on-the-spot search of the files, as everything is already organized for you</p>
+        </div>
+        <div class="cBookCard">
+            <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/63988e419196a9e8f4d4298c_folder_shared_black_24dp.svg" alt="">
+            <h2>Never ask anyone for contacts again</h2>
+            <p>ContactBook will help you keep your contact updates in one place with automatic backups and real-time sync</p>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+<section id="growing">
+    <div class="growingContainer">
+        <h1>Start growing with ContactBook today</h1>
+        <div class="yesOrNo">
+            <div class="noContainer">
+                <h2>WithoutContactBook</h2>
+                <div class="no">
+                    <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/63a01ec6a44941f5cabd8097_close-circle.svg" alt="">
+                    <p>Unorganized contacts</p>
+                </div>
+                <div class="no">
+                    <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/63a01ec6a44941f5cabd8097_close-circle.svg" alt="">
+                    <p>No collaboration</p>
+                </div>
+                <div class="no">
+                    <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/63a01ec6a44941f5cabd8097_close-circle.svg" alt="">
+                    <p>No updates on other devices</p>
+                </div>
+                <div class="no">
+                    <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/63a01ec6a44941f5cabd8097_close-circle.svg" alt="">
+                    <p>Contacts not handy when needed</p>
+                </div>
+            </div>
+            <div class="yesContainer">
+                <h2>With ContactBook</h2>
+                <div class="yes">
+                    <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/63a01ec76e97ee9b3a6cd407_tick-circle.svg" alt="">
+                    <p>All contacts in one place</p>
+                </div>
+                <div class="yes">
+                    <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/63a01ec76e97ee9b3a6cd407_tick-circle.svg" alt="">
+                    <p>Google drive like collaboration</p>
+                </div>
+                <div class="yes">
+                    <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/63a01ec76e97ee9b3a6cd407_tick-circle.svg" alt="">
+                    <p>Syncs with all devices</p>
+                </div>
+                <div class="yes">
+                    <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/63a01ec76e97ee9b3a6cd407_tick-circle.svg" alt="">
+                    <p>Accessible everywhere</p>
+                </div>
+            </div>
+        </div>
+        <button class="btnStart" onclick="contactsBookOpen()">Start Free Trial</button>
+    </div>
+</section>
+<hr>
+
+
+<section id="app">
+    <div class="appContainer">
+        <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/646f25a2f8001bbc4c889d79_Phone%20Mockup-p-800.webp" alt="">
+        <div class="appContent">
+            <h1>Keep your contacts in sync with ContactBook app</h1>
+            <p>Manage your contacts on-the-go with most powerful contact management system on Android and iOS.</p>
+            <div class="storeContainer">
+                <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/642bf43b0bb3f0598a521f37_Apple-p-500.png" alt="">
+                <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/642bf43c87d8be1d056cc0c7_Google%20play-p-500.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="organize">
+    <div class="organizeContainer">
+        <h1>Manage and organize your contacts in one robust, easy-to-use tool</h1>
+        <p>A centralized contact management app to boost workplace collboration whether you are online or offline</p>
+        <button class="btnStart" onclick="contactsBookOpen()">Start Free Trial</button>
+    </div>
+</section>
+
+
+<section id="footerAddress">
+    <div class="addressContainer">
+        <div class="gridContainer">
+            <div class="contactAddress">
+               <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/61498de77442731ec6faa04f_Frame.svg" alt="">
+               <p>ContactBook helps in organizing, managing and sharing contacts so relevant people always have access to the right contacts.</p>
+               <div class="socialIcons">
+                    <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/64f7fd95c62f55fed1c05d2f_Facebook.svg" alt="">
+                    <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/64f7fdcff9ccd5d7fc479bb3_LinkedIn.svg" alt="">
+                    <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/64f7fdde175671c65afdf632_Youtube.svg" alt="">
+                    <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/64f71a150ff994dcd412451e_Twitter.svg" alt="">
+               </div>
+            </div>
+            <div class="caseContaier">
+                <div class="useCase">
+                    <h3>Use case</h3>
+                    <div>CRM for Real Estate</div>
+                    <div>CRM for Financial Services</div>
+                    <div>CRM for Educational Institutes</div>
+                    <div>CRM for Recruitment Agencies</div>
+                    <div>CRM for Digital Agencies</div>
+                    <div>CRM for Healthcare Providers</div>
+                </div>
+                <div class="products">
+                    <h3>Products</h3>
+                    <div>Shared contacts for Gmail</div>
+                    <div>Google Workspace shared contacts</div>
+                    <div>Gmail Plugin</div>
+                    <div>Google Drive Plugin</div>
+                    <div>Google Calender plugin</div>
+                    <div>ContactBook Chrome Extension</div>
+                    <div>ContactBook for Gmail</div>
+                    <div>ContactBook for LinkedIn</div>
+                    <div>ContactBookk for Twitter</div>
+                    <div>ContactBook for Instagram</div>
+                </div>
+                <div class="switchContainer">
+                    <div class="switchFrom">
+                        <h3>Switch from</h3>
+                        <div>Contactsplus</div>
+                        <div>Google Sheets</div>
+                        <div>Google Contacts</div>
+                    </div>
+                    <div class="navigate">
+                        <h3>navigate</h3>
+                        <div>Guide</div>
+                        <div>Blogs</div>
+                        <div>About Us</div>
+                        <div>Contact Us</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="foot">
+    <div class="fContainer">
+        <div class="fText1">
+            <p>© 2023 ContactBook - All rights reserved</p>
+            <p>Terms and Condition</p>
+            <p>Privacy Policy</p>
+        </div>
+        <div class="fText2">
+            <p>Crafted Mindfully at</p>
+            <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/6375fd9e67e3818e81050e63_Logo.svg" alt="">
+            <img src="https://assets-global.website-files.com/6119e20e0135748f16b558bb/6375fd4d13520ba58fd99b31_Icon%20(1).svg" alt="">
+        </div>
+    </div>
+</section>
+
+
+</div>
+
+
+<!--    Page 2 contact book   -->
+
+
+
+</body>
+</html>

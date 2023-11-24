@@ -478,6 +478,51 @@
 
 <!--    Page 2 contact book   -->
 
+<section id="contactList">
+    <div id="contactListContain">
+    <div class="contactListContainer">
+        <div id="optionBar">
+            <button id="backBtn" onclick="contactBookClose()">Back</button>
+            <div class="search1">
+                <input type="search" name="search" id="search">
+                <button id="searchBtn" onclick="searchContacts()" >Search</button>
+            </div>
+            
+            <button id="AddBtn" onclick="createProfile()">Add</button>
+        </div>
+        <div id="profileCreator">
+            <div id="profileCreatorContainer">
+            <div id="contactForm">
+                <!-- <input type="text" name="profileImage" id="profileImage" placeholder="Profile Image Url"> -->
+                <label for="fname">First Name*
+                <input type="text" name="fname" id="fname" placeholder="First Name" required></label>
+                <label for="lName">Last Name
+                <input type="text" name="lName" id="lName" placeholder="Last Name"></label>
+                <label for="mobileNumber">Mobile Number*</label>
+                <input type="number" name="mobileNumber" id="mobileNumber" placeholder="Mobile Number">
+                <div id="btnContainerProfile">
+                    <button id="cancelBtn" onclick="closeProfile()" >Cancel</button>
+                    <button id="saveBtn" onclick="addContact()">Save</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="listContainer">
+            <div id="profile1">
+                <div id="profileImgContainer"><img src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+                <div id="fName1">Ragnar</div>
+                <div id="lName2">Lothbrok</div>
+                <div id="Number">9987564231</div>
+                <div id="btnContainerCall">
+                    <button id="callBtn">Call</button>
+                    <button id="msgBtn">Message</button>
+                    <button id="deleteBtn">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section> 
 
 
 </body>

@@ -870,6 +870,7 @@
     padding: 15px;
 
 }
+
 .fText1{
     display: flex;
     align-items: center;
@@ -891,51 +892,213 @@
 }
 
 /*    Contact book    */
-
-#contacts{
+#contactList{
     width: 100%;
-    height: 300px;
-    background-color: rgb(234, 255, 255);
+    height: 100%;
+    display: none;
+  
+  
 }
-
-.personOne{
-    display: flex;
+#contactListContain{
     width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 60px;
-}
-.personOne img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-.profile{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-#createBtn{
-    position: fixed;
-    top:2%;
-    right:20%;
-}
-.inputProfile{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    background-color: rgb(247, 207, 207);
-}
-.inputProfileContainer{
-    width: 100%;
+    
     display: flex;
     justify-content: center;
-    display: none;
 }
+.contactListContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #010f1e;
+}
+
+#profile1, #container3, .contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 2px black;
+    background-color: white;
+    
+}
+.container6{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f3f3f3;
+}
+#optionBar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    color:white;
+    width: 100%;
+    height: 80px;
+}
+
+#optionBar input{
+    width: 250px;
+    height: 40px;
+    border-radius: 20px 0px 0px 20px;
+    border:none;
+
+}
+#searchBtn{
+    height: 26px;
+}
+.search1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#backBtn, #AddBtn{
+    width: 120px;
+    height: 40px;
+    background-color: white;
+    border:none;
+    border-radius: 20px;
+    font-size: 13pt;
+    font-weight: 600;
+}
+ #AddBtn:hover{
+    color:white;
+    background-color: rgb(30, 241, 188);
+}
+#backBtn:hover{
+    background-color: red;
+    color:white;
+    border:none;
+}
+#searchBtn{
+    width: 120px;
+    height: 40px;
+    border:none;
+    background-color: white;
+    font-size: 13pt;
+    border-left: 1px solid rgb(229, 229, 229);
+    border-radius: 0 20px 20px 0;
+}
+#profileImgContainer , .image1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#profileImgContainer img{
+    width:100%;
+    height: 100% ;
+}
+
+#profileCreator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-color: #ffffff;
+    position: relative;
+   
+}
+#profileCreatorContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    padding: 20px;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px black;
+   
+
+}
+#contactForm{
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#contactForm input{
+    height: 40px;
+    margin-bottom:30px;
+    width: 100%;
+   
+}
+#contactForm button{
+    width: 120px;
+    height: 30px;
+    margin-right: 30px;
+    background-color: black;
+    color:white;
+    border:none;
+    font-size: 12pt;
+}
+#contactForm button:hover{
+    background-color: white;
+    color:black;
+    border:1px solid black;
+}
+
+
+#listContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.textContact{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16pt;
+
+}
+.styleBtn{
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 12pt;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    border:none;
+}
+.styleBtn:hover{
+    background-color: white;
+    color:black;
+    border:1px solid black;
+}
+#deleteBn:hover{
+    background-color: rgb(248, 59, 59);
+    border: none;
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width:960px){
     .secondContainer{
@@ -1150,6 +1313,9 @@
         width: 1200px;
     }
     .fContainer{
+        width: 1200px;
+    }
+    .contactListContainer{
         width: 1200px;
     }
     .businessCardsContainer img{
